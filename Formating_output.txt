@@ -1,0 +1,5 @@
+# Formating xml output
+python 5-SetPositionDetectorToOn.py | tidy -xml -iq
+
+#Formating json output
+python 2-List-Umbrella-Domains.py | jq

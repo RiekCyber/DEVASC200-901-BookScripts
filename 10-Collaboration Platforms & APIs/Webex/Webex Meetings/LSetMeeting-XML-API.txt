@@ -1,0 +1,22 @@
+curl -X POST https://api.Webex.com/WBXService/XMLService -H 'cache-control: no-cache' -H 'content-type: application/xml' -d '<?xml version="1.0" encoding="UTF-8"?>
+<serv:message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<header>
+  <securityContext>
+    <webExID>e.sebert</webExID>
+    <password>Pv8Kg6Qa</password>
+    <siteName>apidemoeu</siteName>
+  </securityContext>
+</header>
+<body>
+  <bodyContent xsi:type="java:com.webex.service.binding.meeting.SetMeeting">
+  <meetingkey>1824618173</meetingkey>
+  <participants>
+    <attendees>
+      <attendee><person><email>student@devasc.com</email></person></attendee>
+    </attendees>
+  </participants>
+  <attendeeOptions><emailInvitations>true</emailInvitations></attendeeOptions>
+  <schedule><openTime>300</openTime></schedule>
+</bodyContent>
+</body>
+</serv:message>' | tidy -xml -iq
