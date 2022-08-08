@@ -1,7 +1,6 @@
 #! /usr/bin/env python
 from meraki_sdk.meraki_sdk_client import MerakiSdkClient
 
-
 #Cisco DevNet Sandbox Meraki API key
 X_CISCO_MERAKI_API_KEY = '5c8ab8029dff7b4fa35c52d5d584e3170602bdb2'
 
@@ -30,4 +29,4 @@ for NET in NETS:
 #Get a list of all the devices that are part of the Always On Network
 #DEVICES = MERAKI.devices.get_network_devices("L_646829496481105433")
 #for DEVICE in DEVICES:
-#    print("Device Model: {0:9s},Serial: {1:14s},MAC: {2:17}, Firmware:{3:12s}".format(DEVICE['model'], DEVICE['serial'], DEVICE['mac'], DEVICE['firmware']))
+#    print("Device Model: {0:9s},Serial: {1:14s},MAC: {2:17}, Firmware:{3:12s}".
