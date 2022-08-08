@@ -13,9 +13,10 @@ ORGS = MERAKI.organizations.get_organizations()
 for ORG in ORGS:
     print("Org ID: {} and Org Name: {}".format(ORG['id'], ORG['name']))
 
+print()
+
 PARAMS = {}
 PARAMS["organization_id"] = "549236" # Demo Organization "DevNet Sandbox"
-
 
 #Get a list of all the networks for the Cisco DevNet organization
 NETS = MERAKI.networks.get_organization_networks(PARAMS)
@@ -25,8 +26,9 @@ for NET in NETS:
     for DEVICE in DEVICES:
         print("-- Device Model: {0:9s},Serial: {1:14s},MAC: {2:17}, Firmware:{3:12s}".format(DEVICE['model'], DEVICE['serial'], DEVICE['mac'], DEVICE['firmware']))
     
+print()
 
 #Get a list of all the devices that are part of the Always On Network
-#DEVICES = MERAKI.devices.get_network_devices("L_646829496481105433")
-#for DEVICE in DEVICES:
-#    print("Device Model: {0:9s},Serial: {1:14s},MAC: {2:17}, Firmware:{3:12s}".
+DEVICES = MERAKI.devices.get_network_devices("L_646829496481105433")
+for DEVICE in DEVICES:
+    print("Device Model: {0:9s},Serial: {1:14s},MAC: {2:17}, Firmware:{3:12s}".format(DEVICE['model'],DEVICE['serial'],DEVICE['mac'], DEVICE['firmware']))
