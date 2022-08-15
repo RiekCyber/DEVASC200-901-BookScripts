@@ -2,7 +2,7 @@
 import sys
 import acitoolkit.acitoolkit as aci
 
-APIC_URL = 'https://10.10.20.14'
+APIC_URL = 'https://10.10.20.14/'
 USERNAME = 'admin'
 PASSWORD = 'C1sco12345'
 
