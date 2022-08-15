@@ -2,9 +2,9 @@
 import sys
 import acitoolkit.acitoolkit as aci
 
-APIC_URL = 'https://10.10.20.14/'
+APIC_URL = 'https://sandboxapicdc.cisco.com'
 USERNAME = 'admin'
-PASSWORD = 'C1sco12345'
+PASSWORD = '!v3G@!4@Y'
 
 # Login to APIC
 SESSION = aci.Session(APIC_URL, USERNAME, PASSWORD)
