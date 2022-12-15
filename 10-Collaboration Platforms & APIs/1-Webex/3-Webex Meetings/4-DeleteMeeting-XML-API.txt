@@ -2,14 +2,14 @@ curl -X POST https://api.Webex.com/WBXService/XMLService -H 'cache-control: no-c
 <serv:message xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <header>
     <securityContext>
-      <webExID>e.sebert</webExID>
-      <password>Pv8Kg6Qa</password>
-      <siteName>apidemoeu</siteName>
+      <webExID>e.sebert@gmail.com</webExID>
+      <password>3gef%zLKWW</password>
+      <siteName>esebert</siteName>
     </securityContext>
   </header>
   <body>
     <bodyContent xsi:type="java:com.webex.service.binding.meeting.DelMeeting">
-      <meetingKey>1824618173</meetingKey>
+      <meetingKey>25332490850</meetingKey>
     </bodyContent>
   </body>
-</serv:message>' | tidy -xml -iq
+</serv:message>' | xq
