@@ -5,7 +5,7 @@ import requests
 
 url = "https://s-platform.api.opendns.com/1.0/domains"
 
-querystring = {"customerKey":"e667960b-4c24-4a15-9f4e-684c882c1ee8"}
+querystring = {"customerKey":"61597426-46f0-4beb-b4a0-9f6586c18b03"}
 
 response = requests.request("GET", url, params=querystring)
 

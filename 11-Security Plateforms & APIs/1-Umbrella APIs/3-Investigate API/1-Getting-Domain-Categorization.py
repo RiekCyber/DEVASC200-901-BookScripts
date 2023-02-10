@@ -2,12 +2,12 @@
 Investigate API """
 
 import requests
-url ="https://investigate.api.umbrella.com/domains/categorization/cisco.com"
+url ="https://investigate.api.umbrella.com/domains/categorization/cisco.com.json"
 
 querystring = {"showLabels":""}
 
 headers = {
-'authorization': "Bearer deadbeef-24d7-40e1-a5ce-3b064606166f",
+'authorization': "Bearer 85b2fdb5-c091-45ca-b107-1196d01edd4f",
 'cache-control': "no-cache",
 }
 

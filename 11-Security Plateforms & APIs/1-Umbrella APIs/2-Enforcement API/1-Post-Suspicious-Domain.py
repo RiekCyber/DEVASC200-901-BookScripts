@@ -5,10 +5,10 @@ import requests
 
 url = "https://s-platform.api.opendns.com/1.0/events"
 
-querystring = {"customerKey":"e667960b-4c24-4a15-9f4e-684c882c1ee8"}
+querystring = {"customerKey":"61597426-46f0-4beb-b4a0-9f6586c18b03"}
 
 dict =     {
-                "deviceId": "deadbeaf-e692-4724-ba36-c28132c761de",
+                "deviceId": "liveriek-e692-4724-ba36-c28132c761de",
                 "deviceVersion": "13.7a",
                 "eventTime": "2020-01-01T09:33:21.0Z",
                 "alertTime": "2020-01-01T09:33:21.0Z",
@@ -85,7 +85,7 @@ headers = { 'Content-Type': "application/json",
             'Connection': "keep-alive",
             }
 
-response = requests.request("POST", url, data=json.dumps(payload), headers=headers, params=querystring)
+response = requests.request("POST", url, data=json.dumps(payload2), headers=headers, params=querystring)
 
 
 print ()
