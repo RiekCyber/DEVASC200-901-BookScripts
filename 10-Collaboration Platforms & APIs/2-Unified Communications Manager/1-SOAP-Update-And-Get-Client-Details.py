@@ -12,7 +12,7 @@ urllib3.disable_warnings(InsecureRequestWarning)
 USERNAME = 'administrator'
 PASSWORD = 'ciscopsdt'
 IP_ADDRESS = "10.10.20.1"
-WSDL = 'axlsqltoolkit/schema//12.5//AXLAPI.wsdl'
+WSDL = 'axlsqltoolkit/schema/14.0/AXLAPI.wsdl'
 BINDING_NAME = "{http://www.cisco.com/AXLAPIService/}AXLAPIBinding"
 
 ADDRESS = "https://{ip}:8443/axl/".format(ip=IP_ADDRESS)
@@ -36,8 +36,10 @@ def main():
     client = Client(wsdl=WSDL,transport=transport)
     axl = client.create_service(BINDING_NAME, ADDRESS)
 
-    update_phone_by_name(axl,"TABUSER008", "DevAsc: Éric's just added a new description")
+    update_phone_by_name(axl,"TABUSER008", "DevAsc: Rikeseb's just added a new description")
     print(get_phone_by_name(axl, "TABUSER008"))
 
 if __name__ == '__main__':
     main()
+
+
